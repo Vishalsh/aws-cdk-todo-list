@@ -1,0 +1,65 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "AwsCdkTodoListStack": {
+        "id": "AwsCdkTodoListStack",
+        "path": "AwsCdkTodoListStack",
+        "children": {
+          "TodoListBucket": {
+            "id": "TodoListBucket",
+            "path": "AwsCdkTodoListStack/TodoListBucket",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "AwsCdkTodoListStack/TodoListBucket/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "bucketEncryption": {
+                      "serverSideEncryptionConfiguration": [
+                        {
+                          "serverSideEncryptionByDefault": {
+                            "sseAlgorithm": "AES256"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "AwsCdkTodoListStack/TodoListBucket/Notifications"
+              }
+            }
+          },
+          "TodoListBucketNameExport": {
+            "id": "TodoListBucketNameExport",
+            "path": "AwsCdkTodoListStack/TodoListBucketNameExport"
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "AwsCdkTodoListStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "AwsCdkTodoListStack/CDKMetadata/Default"
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "AwsCdkTodoListStack/CDKMetadata/Condition"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

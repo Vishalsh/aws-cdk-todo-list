@@ -1,0 +1,111 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AwsCdkTodoListStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AwsCdkTodoListStack.template.json"
+      },
+      "metadata": {
+        "/AwsCdkTodoListStack/TodoListBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TodoListBucket15E0CACA",
+            "trace": [
+              "new Bucket (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1269:22)",
+              "new AwsCdkTodoListStack (/Users/vishalsh/workspace/aws-cdk-todo-list/lib/aws-cdk-todo-list-stack.ts:8:20)",
+              "Object.<anonymous> (/Users/vishalsh/workspace/aws-cdk-todo-list/bin/aws-cdk-todo-list.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/Users/vishalsh/.nvm/versions/node/v14.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkTodoListStack/TodoListBucketNameExport": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TodoListBucketNameExport",
+            "trace": [
+              "new AwsCdkTodoListStack (/Users/vishalsh/workspace/aws-cdk-todo-list/lib/aws-cdk-todo-list-stack.ts:12:5)",
+              "Object.<anonymous> (/Users/vishalsh/workspace/aws-cdk-todo-list/bin/aws-cdk-todo-list.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/Users/vishalsh/.nvm/versions/node/v14.15.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/AwsCdkTodoListStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/AwsCdkTodoListStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:486:12)",
+              "process.emit (/Users/vishalsh/workspace/aws-cdk-todo-list/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
